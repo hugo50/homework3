@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Message</title>
+</head>
+<body>
+    <form method="post", name="create-message", action="">
+    <table>
+        {{ form.as_table }}
+    </table>
+    {% csrf_token %}
+    <input type="submit", value="Submit"/>
+</body>
+</html>

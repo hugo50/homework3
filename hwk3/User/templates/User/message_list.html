@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset='utf-8'>
+<title>{{ state }}</title></head>
+<body>
+    {% for m in message %}
+        <div class="message"><h5>Title: {{ m.title }}</h5>{{ m.message }}</div>
+    {% endfor %}
+</body>
+</html>
